@@ -4,9 +4,6 @@
 
 This is a port of [Iconoir](https://iconoir.com/) to [Phlex](https://www.phlex.fun/)
 
-> [!NOTE]
-> Currently the gem only supports outlined icons. Filled icon variants will be introduced soon.
-
 ## Instructions
 
 ### Installation
@@ -16,8 +13,6 @@ Add the gem to your application:
 ```bash
 bundle add phlex-icons-iconoir
 ```
-
-That's it!
 
 ### Usage
 
@@ -33,7 +28,8 @@ Add the following to your initializers
 
 ```ruby
 Phlex::Icons::Iconoir.configure do |config|
-  config.default_class = "h-6 w-6"
+  config.default_variant = :regular
+  config.default_class = "size-6"
   config.default_height = "24"
   config.default_width = "24"
   config.default_stroke_width = "2"
